@@ -72,12 +72,10 @@ Install `npm` command by installing Node.js. This will allow the use of the **No
 	  grunt.registerTask('default', ['uglify']);
 	};
 	```
-**Note:** Grunt will compile depending on your configuration. In this configuration, make sure that you have a `src/` folder_, which will allow **Grunt** to create a compilation in the `build/` folder.
+**Note:** Grunt will compile depending on your configuration. In this configuration, make sure that you have a `src/` folder, which will allow **Grunt** to create a compilation in the `build/` folder.
 
-7. Run Grunt command to minify (or `uglify`) the source file:
+7. Run Grunt command to minify (or `uglify`) the source file, based on the configuration.
 
 	```
 	grunt
 	```
-	
- 
