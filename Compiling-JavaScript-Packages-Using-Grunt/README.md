@@ -1,8 +1,8 @@
-# Compiling Javascript Projects using Grunt
+# Compiling Javascript Packages using Grunt
 
 Compiling JavaScript has a similar concept of using Ant (of Java). This documentation will compile all JavaScript codes using npm, grunt, and 
 
-**For Java Experienced developers:** _Grunt compiles files, libraries, or packages  using JavaScript configuration. In other words, it is similar to Ant, a software that helps compile Java codes before the main Java program runs._
+**For Java Experienced developers:** _Grunt compiles files, libraries, or packages  using JavaScript configuration. In other words, it is similar to Ant, a software that helps compile Java codes before the main Javanese program runs._
 
 Here's a simple procedure how to install Grunt:
 
