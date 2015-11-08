@@ -1,14 +1,17 @@
-## Compiling Javascript Projects using Grunt
+# Compiling Javascript Projects using Grunt
 
 Compiling JavaScript has a similar concept of using Ant (of Java). This documentation will compile all JavaScript codes using npm, grunt, and 
 
 **For Java Experienced developers:** _Grunt compiles files, libraries, or packages  using JavaScript configuration. In other words, it is similar to Ant, a software that helps compile Java codes before the main Java program runs._
 
-### Installing Grunt 
-
 Here's a simple procedure how to install Grunt:
 
-1. Install `npm` by installing Node.js (Node.js contains both `npm` and `node`)
+## Install Node.js
+Install `npm` command by installing Node.js (Node.js contains both `npm` and `node`)
+
+
+## Install Grunt
+
 2. Create a new project folder called `my-project`
 3. Create two empty files named `Gruntfile.js` and `package.json`:
 
@@ -16,9 +19,7 @@ Here's a simple procedure how to install Grunt:
 	touch Gruntfile.js package.json
 	```
 	
-4. Add content to the file `package.json`. See example package config.
-
-	**Note:** Depending on your dependencies, Grunt will install the plugins coming from its [plugin server](http://gruntjs.com/plugins).
+4. Add content to the file `package.json`. See example settings.
 		
    ```
    {
@@ -35,16 +36,17 @@ Here's a simple procedure how to install Grunt:
         }
    }
    ```
-   
-5. Install the dependencies `grunt`, `grunt-contrib-jshint`, `grunt-contrib-nodeunit` and `uglify` by running.
+	**Note:** Depending on your dependencies, Node.js will install plugins coming from its plugin server. Here's a list of [Grunt plugins](http://gruntjs.com/plugins). Currently, we are installing the plugins `grunt` to run **Grunt commands**. Also, `grunt-contrib-jshint`, `grunt-contrib-nodeunit`, and `uglify` will allow the use of **Grunt plugins** in our grunt configuration.
+
+5. Run `npm install` to install **Grunt dependencies**.
 
 	```
 	sudo npm install
 	```
 
-6. Add content to the file `Gruntfile.js`. See example configuration:
+## Configure and Compile Using Grunt
 
-	**Note:** Depending on your configuration, Grunt will treat how to compile the configurations.
+1. Add content to the file `Gruntfile.js`. See example configuration:
 
 	```
 	module.exports = function(grunt) {
@@ -70,7 +72,9 @@ Here's a simple procedure how to install Grunt:
 	  grunt.registerTask('default', ['uglify']);
 	};
 	```
-7. Run Grunt command:
+**Note:** Grunt will compile depending on your configuration. In this configuration, make sure that you have a `src/` folder_, which will allow **Grunt** to create a compilation in the `build/` folder.
+
+7. Run Grunt command to minify (or `uglify`) the source file:
 
 	```
 	grunt
