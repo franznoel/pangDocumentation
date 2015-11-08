@@ -13,7 +13,7 @@ Here's a simple procedure how to install Grunt.
 2. Install the **Grunt Command Line Interface**, making it available globally in the Terminal.
 
 	```
-	npm install grunt-cli
+	sudo npm install -g grunt-cli
 	```
 
 
