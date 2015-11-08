@@ -1,13 +1,13 @@
-# Compiling Javascript Packages using Grunt
+# Compiling Javascript Packages Using Grunt
 
 Compiling JavaScript has a similar concept of using Ant (of Java). This documentation will compile all JavaScript codes using npm, grunt, and 
 
-**For Java Experienced developers:** _Grunt compiles files, libraries, or packages  using JavaScript configuration. In other words, it is similar to Ant, a software that helps compile Java codes before the main Javanese program runs._
+**For Java experienced developers:** _Grunt compiles files, libraries, or packages  using JavaScript configuration. In other words, it is similar to Ant, a software that helps compile Java codes before the main Java program runs._
 
-Here's a simple procedure how to install Grunt:
+Here's a simple procedure how to install Grunt.
 
 ## Install Node.js
-Install `npm` command by installing Node.js (Node.js contains both `npm` and `node`)
+Install `npm` command by installing Node.js. This will allow the use of the **Node Package Manager**.
 
 
 ## Install Grunt
@@ -36,9 +36,9 @@ Install `npm` command by installing Node.js (Node.js contains both `npm` and `no
         }
    }
    ```
-	**Note:** Depending on your dependencies, Node.js will install plugins coming from its plugin server. Here's a list of [Grunt plugins](http://gruntjs.com/plugins). Currently, we are installing the plugins `grunt` to run **Grunt commands**. Also, `grunt-contrib-jshint`, `grunt-contrib-nodeunit`, and `uglify` will allow the use of **Grunt plugins** in our grunt configuration.
+	**Note:** Depending on your dependencies, Node.js will install plugins coming from its plugin server. Here's a list of [Grunt plugins](http://gruntjs.com/plugins). Currently, we are installing the plugins `grunt` to run **Grunt commands**. Also, `grunt-contrib-jshint`, `grunt-contrib-nodeunit`, and `grunt-contrib-uglify` will allow the use of **Grunt plugins** in our grunt configuration.
 
-5. Run `npm install` to install **Grunt dependencies**.
+5. Run `npm install` to install **Grunt dependencies** using the **Node Package Manager**.
 
 	```
 	sudo npm install
