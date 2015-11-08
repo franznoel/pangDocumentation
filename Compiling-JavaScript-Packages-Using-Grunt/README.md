@@ -6,8 +6,15 @@ Compiling JavaScript has a similar concept of using Ant (of Java). This document
 
 Here's a simple procedure how to install Grunt.
 
-## Install Node.js
-Install `npm` command by installing Node.js. This will allow the use of the **Node Package Manager**.
+## Install Node.js and Grunt CLI
+
+1. Install `npm` command by installing Node.js. This will allow the use of the **Node Package Manager**.
+
+2. Install the **Grunt Command Line Interface**, making it available globally in the Terminal.
+
+	```
+	npm install grunt-cli
+	```
 
 
 ## Install Grunt
@@ -72,9 +79,10 @@ Install `npm` command by installing Node.js. This will allow the use of the **No
 	  grunt.registerTask('default', ['uglify']);
 	};
 	```
-**Note:** Grunt will compile depending on your configuration. In this configuration, make sure that you have a `src/` folder, which will allow **Grunt** to create a compilation in the `build/` folder.
 
-7. Run Grunt command to minify (or `uglify`) the source file, based on the configuration.
+	**Note:** Grunt will compile depending on your configuration. In this configuration, make sure that you have a `src/` folder, which will allow **Grunt** to create a compilation in the `build/` folder.
+
+3. Run Grunt command to minify (or `uglify`) the source file, based on the configuration.
 
 	```
 	grunt
